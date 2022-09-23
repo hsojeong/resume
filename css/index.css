@@ -76,14 +76,6 @@ section > div {
 #sect2,#sect3,#sect4,#sect5 {
     background:#6c9eb7;
 }
-#sect2 div h2, #sect4 div h2 {
-    color: #efe032;
-    font-size: 110px;
-    font-weight: normal;
-    text-shadow: 1px 1px 1px #000;
-    text-align: center;
-    margin-top: 100px;
-}
 
 /* section1 */
 #sect1 {
@@ -108,14 +100,25 @@ section > div {
 }
 
 /* section2 */
+#sect2 div h2 {
+    color: #efe032;
+    font-size: 110px;
+    font-weight: normal;
+    text-shadow: 1px 2px 1px #000;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 #sect2 > div > div {
     width: 80%;
     height: 80%;
     display: flex;
-    transform: translateX(200px);
+    transform: translate(200px , 220px);
 }
 #sect2 .image {
-    width: 30%;
+    width: 35%;
+    margin-right: 5%;
     text-align: right;
     padding-top: 200px;
 }
@@ -126,8 +129,57 @@ section > div {
     border-radius: 50%;
 }
 #sect2 .intro {
-    width: 70%;
+    width: 40%;
+    margin:0 10% 0 2%;
+    padding-top: 110px;
 } 
+#sect2 .intro h3 {
+    font-size: 35px;
+    margin: 20px 0;
+}
+#sect2 .intro .firstintro{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+#sect2 .intro .firstintro > div {
+    font-size: 23px;
+    line-height: 1.7;
+    font-weight: bold;
+    color: #222;
+}
+#sect2 .intro .firstintro > div span {
+    font-size: 16px;
+    font-family: 'Nanum Gothic';
+    padding-left: 20px;
+}
+#sect2 .intro .seconintro {
+    display: flex;
+}
+#sect2 .intro .seconintro > div:nth-child(1) {
+    border-right: 1px solid #ddd;
+    padding:0 50px 50px 0;
+}
+#sect2 .intro .seconintro > div:nth-child(2) {
+    padding-left: 40px;
+}
+#sect2 .intro .seconintro > div p {
+    font-size: 15px;
+    font-family: 'Nanum Gothic';
+    line-height: 1.9;
+    color: #222;
+    font-weight: bold;
+}
+#sect2 .bgimg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-150px , 360px) rotate(20deg);
+}
+#sect2 .bgimg img {
+    width: 700px;
+    height: auto;
+}
+
 
 
 /* section3 */
@@ -135,7 +187,7 @@ section > div {
     color: #efe032;
     font-size: 110px;
     font-weight: normal;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 2px 1px #000;
     position: absolute;
     top: 150px;
     left: 50%;
@@ -203,6 +255,14 @@ section > div {
 
 
 /* section4 */
+#sect4 div h2 {
+    color: #efe032;
+    font-size: 110px;
+    font-weight: normal;
+    text-shadow: 1px 2px 1px #000;
+    text-align: center;
+    margin-top: 100px;
+}
 
 /* section5 */
 #sect5 > div {
@@ -216,7 +276,7 @@ section > div {
     font-size: 90px;
     z-index: 99;
     font-weight: normal;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 2px 1px #000;
 }
 #sect5 form {
     background: url(../images/memo1.png) no-repeat;
