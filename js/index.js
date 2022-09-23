@@ -20,11 +20,9 @@ $('#menu li a').on('click',function(){
     $('html, body').animate({
         scrollTop:sectdist
     }, 1000)
-    
-    $(this).parent().addClass('on')
-    $(this).parent().siblings().removeClass('on')
     return false
 })
+
 
 $('h1 a').on('click',function(){
     $('html,body').animate({scrollTop:0},1000)
@@ -54,14 +52,40 @@ $(window).on('scroll', function(){
         $('#menu li').eq(0).addClass('on').siblings().removeClass('on')
     } else if ( sct>=sect2 && sct<sect3) {
         $('#menu li').eq(1).addClass('on').siblings().removeClass('on')
+        $('.myscore').css({
+            height:'0%'
+        })
+        $('#sect3').removeClass('on')
     } else if ( sct>=sect3 && sct<sect4 ) {
         $('#menu li').eq(2).addClass('on').siblings().removeClass('on')
+        if( !$('#sect3').hasClass('on')){
+            $('#sect3').addClass('on')
+            gragh(60, '.photo' ,15)
+            gragh(70, '.illu' ,17)
+            gragh(90, '.html' ,18)
+            gragh(80, '.css' ,20)
+            gragh(60, '.js' ,22)
+            gragh(70, '.jq' ,24)}
     } else if (sct>=sect4 && sct<sect5) {
         $('#menu li').eq(3).addClass('on').siblings().removeClass('on')
     } else if (sct>=sect5) {
         $('#menu li').eq(4).addClass('on').siblings().removeClass('on')
     }
 })
+function gragh(jumsu, cname , time) {
+    let num = 0;
+    let stop = setInterval(function(){
+        num++
+        if( num<=jumsu ) {
+            $(cname).css({
+                height:num+'%'
+            })
+            $(cname).text(num+'%')
+        } else {
+            clearInterval(stop)
+        }
+    } ,time)
+}
 
 
 $('section').on('mousewheel',function(e, delta){
