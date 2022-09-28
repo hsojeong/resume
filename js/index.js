@@ -50,12 +50,16 @@ $(window).on('scroll', function(){
     let sct = $(this).scrollTop()
     if (sct>=0 && sct<sect2) {
         $('#menu li').eq(0).addClass('on').siblings().removeClass('on')
+        $('h1').removeClass('on1')
+        $('#sect4').removeClass('on')
     } else if ( sct>=sect2 && sct<sect3) {
         $('#menu li').eq(1).addClass('on').siblings().removeClass('on')
         $('.myscore').css({
             height:'0%'
         })
         $('#sect3').removeClass('on')
+        $('h1').addClass('on1')
+        $('#sect4').removeClass('on')
     } else if ( sct>=sect3 && sct<sect4 ) {
         $('#menu li').eq(2).addClass('on').siblings().removeClass('on')
         if( !$('#sect3').hasClass('on')){
@@ -66,10 +70,16 @@ $(window).on('scroll', function(){
             gragh(80, '.css' ,20)
             gragh(60, '.js' ,22)
             gragh(70, '.jq' ,24)}
+        $('h1').removeClass('on1')
+        $('#sect4').removeClass('on')
     } else if (sct>=sect4 && sct<sect5) {
         $('#menu li').eq(3).addClass('on').siblings().removeClass('on')
+        $('h1').removeClass('on1')
+        $('#sect4').addClass('on')
     } else if (sct>=sect5) {
         $('#menu li').eq(4).addClass('on').siblings().removeClass('on')
+        $('h1').removeClass('on1')
+        $('#sect4').removeClass('on')
     }
 })
 function gragh(jumsu, cname , time) {
@@ -102,4 +112,15 @@ $('section').on('mousewheel',function(e, delta){
             scrollTop:nextTop+'px'
         },300)
     }
+})
+
+var sect2Near = $('#sect2').offset().top
+
+$(window).on('scroll',function(){
+    var sct = $(this).scrollTop()
+    if (sct >= sect2Near) {
+      $('#sect2').addClass('on')
+  } else {
+      $('#sect2').removeClass('on')
+  }
 })

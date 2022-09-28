@@ -7,8 +7,13 @@ html {overflow-x: hidden;}
 
 /* logo */
 h1{
-    position: fixed; top: 60px; right: 70px;
-    z-index: 999;
+    position: fixed; top: 60px; left: 70px;
+    z-index: 999; transition: all 0.5s;
+    transform: scale(1);
+}
+h1.on1 {
+    top: 330px; left: 450px;
+    transform: scale(1.2);
 }
 h1 img {
     width: 100px;
@@ -96,7 +101,6 @@ section > div {
 #sect1 h3 p {
     animation: shakeY 6s infinite ;
     margin-top: 17px;
-
 }
 
 /* section2 */
@@ -111,34 +115,52 @@ section > div {
     transform: translateX(-50%);
 }
 #sect2 > div > div {
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     display: flex;
-    transform: translate(200px , 220px);
+    transform: translate(390px , 280px);
+    background-image: url(../images/dfdfdf.jpeg);
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 10px;
 }
 #sect2 .image {
-    width: 35%;
-    margin-right: 5%;
+    width: 30%;
+    margin-left: 5%;
     text-align: right;
-    padding-top: 200px;
+    padding-top: 150px;
+    transform: translateX(-100%) scale(2);
+    opacity: 0;
+    transition: all 1s;
+}
+#sect2.on .image {
+    transform: translateX(0%) scale(1);
+    opacity: 1; 
 }
 #sect2 .image img {
-    width: 200px;
+    width: 250px;
     height: auto;
     border: 2px solid #555;
     border-radius: 50%;
 }
 #sect2 .intro {
-    width: 40%;
-    margin:0 10% 0 2%;
-    padding-top: 110px;
+    width: 45%;
+    margin-left :10%;
+    padding-top: 70px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1s;
 } 
+#sect2.on .intro {
+    transform: translateX(0%);
+    opacity: 1;
+}
 #sect2 .intro h3 {
     font-size: 35px;
     margin: 20px 0;
 }
 #sect2 .intro .firstintro{
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333;
     padding-bottom: 20px;
 }
 #sect2 .intro .firstintro > div {
@@ -156,28 +178,20 @@ section > div {
     display: flex;
 }
 #sect2 .intro .seconintro > div:nth-child(1) {
-    border-right: 1px solid #ddd;
-    padding:0 50px 50px 0;
+    border-right: 1px solid #333;
+    padding:10px 30px 40px 0;
+    flex: 1;
 }
 #sect2 .intro .seconintro > div:nth-child(2) {
-    padding-left: 40px;
+    padding:10px 0 0 40px;
+    flex: 2;
 }
 #sect2 .intro .seconintro > div p {
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Nanum Gothic';
     line-height: 1.9;
     color: #222;
     font-weight: bold;
-}
-#sect2 .bgimg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: translate(-150px , 360px) rotate(20deg);
-}
-#sect2 .bgimg img {
-    width: 700px;
-    height: auto;
 }
 
 
@@ -261,8 +275,134 @@ section > div {
     font-weight: normal;
     text-shadow: 1px 2px 1px #000;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 90px;
 }
+#sect4 .port1 {
+    width: 70%;
+    height: 65%;
+    background-color: #f5f5f5;
+    transform: translate(300px , 35px) scale(0.2);
+    border: 3px solid rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    opacity: 0;
+    transition: all 1s;
+}
+#sect4.on .port1 {
+    transform: translate(300px , 35px) scale(1);
+    opacity: 1;
+}
+
+.slide {position: relative;}
+.slide .mouse {
+    position: absolute;
+    top: 70px; left: 110px;
+    animation: shakeY 4s infinite ;
+}
+.slide .mouse img {
+    width: 60px;
+}
+.slide img { 
+    width:100%; 
+    position:relative; 
+}
+.slide .rwdP { 
+    width:600px; 
+    overflow:hidden; 
+    position:absolute;
+    top: 150px;
+    left: 100px;
+}
+.slide .rwdT { 
+    position:absolute; 
+    top: 210px; 
+    left: 530px;
+    overflow:hidden; 
+    width:250px
+}
+.slide .rwdM { 
+    position:absolute; 
+    top: 250px; 
+    left: 730px;
+    overflow:hidden; 
+    width:180px }
+
+.rwdP .overlay { 
+    width:581px; height:318px;
+    position:absolute;  
+    top:15px; left:5px;
+    background:url('../images/web.png') no-repeat;
+    background-size:cover;
+    background-position:top center;
+    transition:all 1s;
+}
+.rwdP:hover .overlay { 
+    background-position:bottom center; 
+}
+.rwdT .overlay { 
+    width:228px; height:316px; position:absolute;
+    top:35px; left:10px;
+    background:url('../images/pad.png') no-repeat;
+    background-size:cover;
+    background-position:top center;
+    transition:all 1s;
+}
+.rwdT:hover .overlay { 
+    background-position:bottom center; 
+}
+.rwdM .overlay { 
+    width:139px; height:252px; 
+    position:absolute;  
+    top:60px; left:20px;
+    background:url('../images/mobile.png') no-repeat;
+    background-size:cover;
+    background-position:top center;
+    transition:all 1s;
+}
+.rwdM:hover .overlay { 
+    background-position:bottom center; 
+}
+
+.slide .postit {
+    position: absolute;
+    top: 205px; right: 55px;
+    background-image: url(../images/post.png);
+    background-size: cover;
+    width: 400px;
+    height: 417px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.slide .postit h4 {
+    padding: 80px 10px 30px 0;
+    font-size: 50px;
+}
+.slide .postit p:nth-child(2) {
+    font-family: 'Nanum Gothic Coding', monospace;
+    padding-right: 10px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: #333;
+}
+.slide .postit a {
+    padding: 0 5px 5px 5px;
+    margin-right: 15px;
+    font-size: 22px;
+    color: #333;
+} 
+.slide .postit a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.slide .postit p:nth-child(4) {
+    font-family: 'Nanum Gothic';
+    padding: 30px 10px 0 0 ;
+    font-size: 12px;
+    color: #333;
+}
+.slide .postit p:nth-child(4) i {
+    font-size: 14px;
+}
+
 
 /* section5 */
 #sect5 > div {
@@ -316,8 +456,8 @@ section > div {
     border-bottom:2px solid #072a3c;
     outline: none;
     width: 200px;
-    font-size: 16px;
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 15px;
+    font-family: 'Nanum Gothic';
     padding: 5px;
     cursor: pointer;
 }
@@ -328,22 +468,35 @@ section > div {
     width: 250px;
     height: 200px;
     margin-top: 10px;
-    font-size: 16px;
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 15px;
+    font-family: 'Nanum Gothic';
     padding: 10px;
     border-radius: 3px;
     cursor: pointer;
 }
-#sect5 form > div p button {
-    width: 20%;
-    font-size: 23px;
+#sect5 form .btn {
+    text-align: end;
+}
+#sect5 form .btn button:nth-child(1) {
+    width: 10%;
+    font-size: 13px;
     background-color: #ddd;
     border: 1px solid #555;
     border-radius: 3px;
-    margin-left: 180px;
     cursor: pointer;
-    padding: 2px 0;
-    text-shadow: 0px 1px 0px #000;
+    padding: 4px 0;
+    font-weight: bold;
+}
+#sect5 form .btn button:nth-child(2) {
+    width: 20%;
+    font-size: 13px;
+    background-color: #ddd;
+    border: 1px solid #555;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 4px 0;
+    font-family: 'Nanum Gothic';
+    font-weight: bold;
 }
 
 /* loading */
