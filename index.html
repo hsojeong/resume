@@ -8,6 +8,7 @@
     <script src="./js/prefixfree.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/index.css">
 	<script src="./js/jquery-1.12.4.min.js"></script>
@@ -109,7 +110,7 @@
         <section id="sect4">
             <div>
                 <h2>My Portfolio</h2>
-                <div class="port1">
+                <div class="port1"> 
                     <div class="slidegroup">
                         <div class="slide slide1">
                             <div class="mouse">
@@ -128,13 +129,29 @@
                                 <img src="./images/pngegg4.png" alt="">
                             </div>
                             <div class="postit">
+                                <img src="./images/point.png" alt="">
                                 <h4>First.</h4>
                                 <p>&lt; 제주맥주 리뉴얼 사이트 &gt;</p>
                                 <a href="https://hsojeong.github.io/jejubeer/" target="_blank" >https://hsojeong.github.io/jejubeer/</a>
                                 <p><i class="fa-solid fa-arrow-pointer"></i>&nbsp; 클릭 시, 해당 사이트로 이동합니다.</p>
                             </div>
                         </div>
-                        <div class="slide slide2"></div>
+                        <div class="slide slide2">
+                            <div class="mouse">
+                                <img src="./images/mouse.png" alt="">
+                            </div>
+                            <div class="rwdP">
+                                <div class="overlay"></div>
+                                <img src="./images/pngegg1.png" alt="">
+                            </div>
+                            <div class="postit">
+                                <img src="./images/point.png" alt="">
+                                <h4>Second.</h4>
+                                <p>&lt; Resume Site &gt;</p>
+                                <a href="https://hsojeong.github.io/resume/" target="_blank" >https://hsojeong.github.io/resume/</a>
+                                <p><i class="fa-solid fa-arrow-pointer"></i>&nbsp; 클릭 시, 해당 사이트로 이동합니다.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,14 +180,13 @@
                             <textarea id="memo"></textarea>
                         </p>
                         <div class="btn">
-                            <button type="reset"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+                            <input type="reset" value="취소" id="cancel" style="display: none;">
+                            <label for="cancel"><i class="fa-solid fa-arrow-rotate-right"></i></label>
                             <button type="submit">send</button>
                         </div>
-                    </div>
-                    <div style="display:none" class="thankyou_message">
-                        <p>
-                            연락주셔서 감사합니다. 빠른 시일 내에 답변 드리겠습니다🚀
-                        </p>
+                        <div style="display:none" class="thankyou_message">
+                            <p>❤️ Thank you ❤️</p>
+                        </div>
                     </div>
                 </form>
             </div>

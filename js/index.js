@@ -124,3 +124,10 @@ $(window).on('scroll',function(){
       $('#sect2').removeClass('on')
   }
 })
+
+$('#sect4 .port1 .slidegroup').slick({
+    autoplay:false,
+    dots:false,
+    prevArrow:'<button class="arrleft"><i class="fas fa-angle-left"></i></button>',
+    nextArrow:'<button class="arrright"><p>Next Page <i class="fas fa-angle-right"></i></p></button>'
+})
