@@ -88,19 +88,24 @@ section > div {
 }
 #sect1 h3 {
     position: absolute;
-    top: 560px;
-    left: 350px;
-    font-size: 40px;
+    top: 545px;
+    left: 380px;
+    font-size: 42px;
     font-weight: normal;
     color: #fff;
 }
-#sect1 h3 span {
-    color: #efe032;
-    font-weight: bold;
+#sect1 h3 i {
+    font-size: 30px;
 }
 #sect1 h3 p {
     animation: shakeY 6s infinite ;
-    margin-top: 17px;
+    margin-top: 18px;
+    font-size: 36px;
+    color: #ddd;
+}
+#sect1 h3 span {
+    color: #efe032;
+    text-shadow: 1px 1px 1px #efe032;
 }
 
 /* section2 */
@@ -445,7 +450,7 @@ section > div {
     width:581px; height:318px;
     position:absolute;  
     top:15px; left:5px;
-    background:url('../images/resume.png') no-repeat;
+    background:url('../images/resume1.png') no-repeat;
     background-size:cover;
     background-position:top center;
     transition:all 1s;
