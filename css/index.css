@@ -326,9 +326,16 @@ section > div {
     position: absolute;
     top: 120px; left: 90px;
     animation: shakeY 4s infinite ;
+    display: flex;
 }
 #sect4 .slidegroup .slide .mouse img {
     width: 50px;
+}
+#sect4 .slidegroup .slide .mouse p {
+    font-size: 10px;
+    font-family: 'Nanum Gothic';
+    color: #555;
+    padding-top: 25px;
 }
 #sect4 .slidegroup .slide img { 
     width:100%; 
@@ -438,6 +445,7 @@ section > div {
     position: absolute;
     top: 130px; left: 180px;
     animation: shakeY 4s infinite ;
+    display: flex;
 }
 #sect4 .slidegroup .slide2 .rwdP { 
     width:600px; 
