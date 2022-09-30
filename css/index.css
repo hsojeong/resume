@@ -301,7 +301,7 @@ section > div {
     font-weight: normal;
     text-shadow: 1px 2px 1px #000;
     text-align: center;
-    margin: 80px 0 20px;
+    margin: 80px 10px 30px 0;
 }
 #sect4 .port1 {
     width: 1240px;
@@ -500,18 +500,34 @@ section > div {
 
 
 /* section5 */
-#sect5 > div {
-    background: url(../images/grgr.png) no-repeat;
-    transform: translate(170px,120px);
+#sect5 > div > div {
+    max-width: 2000px;
+    margin: 0 auto;
 }
-#sect5 > div h2 {
+#sect5 div h2 {
     position: absolute;
-    top: 90px; right: 700px;
+    top: 190px; right: -300px;
     color: #efe032;
-    font-size: 90px;
-    z-index: 99;
+    font-size: 100px;
+    z-index: 999;
     font-weight: normal;
     text-shadow: 1px 2px 1px #000;
+    transition: all 1s;
+}
+#sect5.on div h2 {
+    right: 505px;
+}
+#sect5 .contactbox {
+    transform: translate(170px , 110px);
+    display: flex;
+}
+#sect5.lpimg {
+    transition: all 1s ;
+    animation: none;
+}
+#sect5.on .lpimg {
+    animation: rotateIn 2s 0.7s;
+    animation-iteration-count: 1;
 }
 #sect5 form {
     background: url(../images/memo1.png) no-repeat;
@@ -519,12 +535,17 @@ section > div {
     width: 900px;
     height: 679.285px;
     display: flex;
-    margin: 0 auto;
-    transform: translate(30px,35px);
     padding-top: 260px;
-    font-size: 30px;
+    font-size: 32px;
     color: #072a3c;
     text-shadow: 0px 1px 0px #000;
+    transform: translate(500px,30px);
+    opacity: 0;
+    transition: all 1s;
+}
+#sect5.on form {
+    transform: translate(-390px,30px);
+    opacity: 1;
 }
 #sect5 form > div {
     width: 40%;
@@ -560,7 +581,7 @@ section > div {
     outline: none;
     border: 2px solid #072a3c;
     width: 250px;
-    height: 200px;
+    height: 220px;
     margin-top: 10px;
     font-size: 15px;
     font-family: 'Nanum Gothic';

@@ -53,6 +53,7 @@ $(window).on('scroll', function(){
         $('h1').removeClass('on1')
         $('#sect4').removeClass('on')
         $('#menu').addClass('on3')
+        $('#sect5').removeClass('on')
     } else if ( sct>=sect2 && sct<sect3) {
         $('#menu li').eq(1).addClass('on').siblings().removeClass('on')
         $('.myscore').css({
@@ -62,6 +63,7 @@ $(window).on('scroll', function(){
         $('h1').addClass('on1')
         $('#sect4').removeClass('on')
         $('#menu').removeClass('on3')
+        $('#sect5').removeClass('on')
     } else if ( sct>=sect3 && sct<sect4 ) {
         $('#menu li').eq(2).addClass('on').siblings().removeClass('on')
         if( !$('#sect3').hasClass('on')){
@@ -75,16 +77,18 @@ $(window).on('scroll', function(){
         $('h1').removeClass('on1')
         $('#sect4').removeClass('on')
         $('#menu').removeClass('on3')
+        $('#sect5').removeClass('on')
     } else if (sct>=sect4 && sct<sect5) {
         $('#menu li').eq(3).addClass('on').siblings().removeClass('on')
         $('h1').removeClass('on1')
         $('#sect4').addClass('on')
         $('#menu').removeClass('on3')
+        $('#sect5').removeClass('on')
     } else if (sct>=sect5) {
         $('#menu li').eq(4).addClass('on').siblings().removeClass('on')
         $('h1').removeClass('on1')
-        $('#sect4').removeClass('on')
         $('#menu').removeClass('on3')
+        $('#sect5').addClass('on')
     }
 })
 function gragh(jumsu, cname , time) {

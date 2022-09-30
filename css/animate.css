@@ -3006,9 +3006,9 @@
 /* Rotating entrances */
 @-webkit-keyframes rotateIn {
   from {
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
+    -webkit-transform: rotate3d(0, 0, 1, -300deg);
+    transform: rotate3d(0, 0, 1, -300deg);
+    opacity: 1;
   }
 
   to {
@@ -3019,9 +3019,9 @@
 }
 @keyframes rotateIn {
   from {
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
+    -webkit-transform: rotate3d(0, 0, 1, -300deg);
+    transform: rotate3d(0, 0, 1, -300deg);
+    opacity: 1;
   }
 
   to {
@@ -3038,9 +3038,9 @@
 }
 @-webkit-keyframes rotateInDownLeft {
   from {
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
-    opacity: 0;
+    -webkit-transform: rotate3d(0, 0, 1, 300deg);
+    transform: rotate3d(0, 0, 1, 300deg);
+    opacity: 1;
   }
 
   to {
@@ -3051,9 +3051,9 @@
 }
 @keyframes rotateInDownLeft {
   from {
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
-    opacity: 0;
+    -webkit-transform: rotate3d(0, 0, 1, 300deg);
+    transform: rotate3d(0, 0, 1, 300deg);
+    opacity: 1;
   }
 
   to {
