@@ -506,7 +506,7 @@ section > div {
 }
 #sect5 div h2 {
     position: absolute;
-    top: 190px; right: -300px;
+    top: 190px; right: -500px;
     color: #efe032;
     font-size: 100px;
     z-index: 999;
