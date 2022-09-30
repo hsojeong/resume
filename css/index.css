@@ -522,11 +522,11 @@ section > div {
     display: flex;
 }
 #sect5.lpimg {
-    transition: all 1s ;
+    transition: all 0.5s ;
     animation: none;
 }
 #sect5.on .lpimg {
-    animation: rotateIn 2s 0.7s;
+    animation: rotate 3s 0.7s;
     animation-iteration-count: 1;
 }
 #sect5 form {
