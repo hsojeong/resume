@@ -554,7 +554,6 @@ section > div {
     font-size: 15px;
     font-family: 'Nanum Gothic';
     padding: 5px;
-    cursor: pointer;
 }
 #sect5 form > div p textarea {
     background-color: inherit;
@@ -567,7 +566,6 @@ section > div {
     font-family: 'Nanum Gothic';
     padding: 10px;
     border-radius: 3px;
-    cursor: pointer;
 }
 #sect5 form .btn {
     text-align: end;
