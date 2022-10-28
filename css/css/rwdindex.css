@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+
+/* 미디어쿼리 1920px */
+@media screen and (max-width:1920px) {
+
+/* logo */
+h1{
+     top: 30px; left: 50px;
+}
+h1.on1 {
+    top: 180px; left: 280px;
+    transform: scale(1.2);
+}
+h1 img {
+    width: 90px;
+}
+
+/* navigation */
+#menu {
+    font-size: 18px;
+}
+#menu.on3 {
+    font-size: 22px;
+}
+#menu.on3 li {
+    margin-bottom: 0px;
+}
+
+#menu li::before {
+    height: 22px;
+}
+#menu.on3 li::before {
+    height: 26px;
+}
+#menu li.on {
+    font-size: 18px;
+}
+#menu.on3 li.on {
+    font-size: 22px;
+}
+#menu li:hover {
+    font-size: 18px;
+}
+#menu.on3 li:hover {
+    font-size: 22px;
+}
+
+/* section1 */
+
+#sect1 h3 {
+    top: 320px;
+    left: 190px;
+    font-size: 30px;
+}
+#sect1 h3 i {
+    font-size: 28px;
+}
+#sect1 h3 p {
+    font-size: 27px;
+}
+
+/* section2 */
+#sect2 div h2 {
+    font-size: 90px;
+    top: 50px;
+}
+#sect2 > div > div {
+    transform: translateY(160px);
+}
+#sect2 .image {
+    padding-top: 80px;
+}
+#sect2 .image img {
+    width: 180px;
+}
+#sect2 .intro {
+    padding-top: 25px;
+} 
+#sect2 .intro h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+#sect2 .intro .firstintro{
+    padding-bottom: 10px;
+}
+#sect2 .intro .firstintro > div {
+    font-size: 20px;
+    line-height: 1.5;
+}
+#sect2 .intro .firstintro > div span {
+    font-size: 12px;
+}
+#sect2 .intro .seconintro > div:nth-child(1) {
+    padding:10px 30px 0px 0;
+}
+#sect2 .intro .seconintro > div p {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+
+/* section3 */
+#sect3 div h2{
+    font-size: 80px;
+    top: 50px;
+}
+#sect3 .graphbox {
+    bottom: 140px;
+}
+
+
+/* section4 */
+#sect4 div h2 {
+    font-size: 80px;
+    margin: 10px 10px 0px 0;
+}
+#sect4 .port1 {
+    width: 900px;
+    height: 515.322px;
+}
+#sect4 .slidegroup .arrright {
+    transform: translate(700px , -230px);
+}
+
+
+
+#sect4 .slidegroup .slide1 .mouse {
+    top: 80px; left: 90px;
+}
+#sect4 .slidegroup .slide .mouse img {
+    width: 40px;
+}
+#sect4 .slidegroup .slide .mouse p {
+    font-size: 10px;
+    padding-top: 18px;
+}
+#sect4 .slidegroup .slide1 .rwdP { 
+    width:400px; 
+    top: 150px;
+    left: 40px;
+}
+#sect4 .slidegroup .slide1 .rwdT { 
+    position:absolute; 
+    top: 180px; 
+    left: 330px;
+    overflow:hidden; 
+    width:180px
+}
+#sect4 .slidegroup .slide1 .rwdM { 
+    position:absolute; 
+    top: 210px; 
+    left: 470px;
+    overflow:hidden; 
+    width:130px }
+
+#sect4 .slidegroup .slide1 .rwdP .overlay { 
+    width:385px; height:237px;
+    position:absolute;  
+    top:10px; left:5px;
+    background:url('../images/web.png') no-repeat;
+    background-size:cover;
+    background-position:top center;
+    transition:all 1s;
+}
+#sect4 .slidegroup .slide1 .rwdP:hover .overlay { 
+    background-position:bottom center; 
+}
+#sect4 .slidegroup .slide1 .rwdT .overlay { 
+    width:168px; height:223px; position:absolute;
+    top:28px; left:10px;
+    background:url('../images/pad.png') no-repeat;
+    background-size:cover;
+    background-position:top center;
+    transition:all 1s;
+}
+#sect4 .slidegroup .slide1 .rwdT:hover .overlay { 
+    background-position:bottom center; 
+}
+#sect4 .slidegroup .slide1 .rwdM .overlay { 
+    width:101px; height:186px; 
+    position:absolute;  
+    top:43px; left:16px;
+    background:url('../images/mobile.png') no-repeat;
+    background-size:cover;
+    background-position:top center;
+    transition:all 1s;
+}
+#sect4 .slidegroup .slide1 .rwdM:hover .overlay { 
+    background-position:bottom center; 
+}
+
+#sect4 .slidegroup .slide1 .postit {
+    position: absolute;
+    top: 180px; right: 10px;
+    text-align: center;
+}
+#sect4 .slidegroup .slide .postit h4 {
+    padding: 50px 10px 30px 0;
+    font-size: 40px;
+}
+#sect4 .slidegroup .slide .postit p:nth-child(3) {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+#sect4 .slidegroup .slide .postit a {
+    padding: 0 5px 0px 0;
+    margin-right: 35px;
+    font-size: 20px;
+    color: #333;
+} 
+#sect4 .slidegroup .slide .postit p:nth-child(5) {
+    padding: 15px 10px 0 0 ;
+    font-size: 10px;
+}
+#sect4 .slidegroup .slide .postit p:nth-child(5) i {
+    font-size: 10px;
+}
+
+
+#sect4 .slidegroup .slide2 .mouse {
+    top: 100px; left: 150px;
+}
+#sect4 .slidegroup .slide2 .rwdP { 
+    width:400px; 
+    top: 160px;
+    left: 120px;
+}
+#sect4 .slidegroup .slide2 .rwdP .overlay { 
+    width:385px; height:237px;
+    position:absolute;  
+    top:10px; left:5px;
+    background:url('../images/resume1.png') no-repeat;
+    background-size:cover;
+    background-position:top center;
+    transition:all 1s;
+}
+#sect4 .slidegroup .slide2 .rwdP:hover .overlay { 
+    background-position:bottom center; 
+}
+#sect4 .slidegroup .slide2 .postit {
+    position: absolute;
+    top: 170px; right: 60px;
+    text-align: center;
+}
+#sect4 .slidegroup .slide2 .postit img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 5px; right: 190px;
+} 
+
+
+/* section5 */
+#sect5 div h2 {
+    top: 150px; right: -500px;
+    font-size: 70px;
+}
+#sect5.on div h2 {
+    right: 300px;
+}
+#sect5 .contactbox {
+    transform: translate(200px , 10px);
+    display: flex;
+}
+
+#sect5 form {
+    padding-top: 260px;
+    font-size: 32px;
+    color: #072a3c;
+    text-shadow: 0px 1px 0px #000;
+    transform: translate(500px,30px);
+    opacity: 0;
+    transition: all 1s;
+}
+#sect5.on form {
+    transform: translate(-390px,30px);
+    opacity: 1;
+}
+#sect5 form > div {
+    width: 40%;
+}
+#sect5 form > div:nth-child(1) {
+    padding-left: 50px;
+    margin-left: 10%;
+}
+#sect5 form > div:nth-child(2) {
+    margin : 0 5%;
+    padding-left: 30px; 
+}
+#sect5 form > div:nth-child(1) p {
+    margin-bottom: 30px;
+}
+#sect5 form > div:nth-child(2) p {
+    margin-bottom: 10px;
+}
+#sect5 form > div p label {
+    display: block;
+}
+#sect5 form > div p > input {
+    background-color: inherit;
+    border-bottom:2px solid #072a3c;
+    outline: none;
+    width: 200px;
+    font-size: 15px;
+    font-family: 'Nanum Gothic';
+    padding: 5px;
+}
+#sect5 form > div p textarea {
+    background-color: inherit;
+    outline: none;
+    border: 2px solid #072a3c;
+    width: 250px;
+    height: 220px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Nanum Gothic';
+    padding: 10px;
+    border-radius: 3px;
+}
+#sect5 form .btn {
+    text-align: end;
+}
+#sect5 form .btn > label {
+    font-size: 12px;
+    background-color: #ddd;
+    border: 1px solid #555;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 10px 4px;
+}
+#sect5 form .btn button {
+    width: 20%;
+    font-size: 13px;
+    background-color: #ddd;
+    border: 1px solid #555;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 4px 0;
+    font-family: 'Nanum Gothic';
+    font-weight: bold;
+    margin: 0 90px 0 3px;
+}
+#sect5 .thankyou_message p {
+    font-size: 20px;
+    margin: 20px 50px 0 0 ;
+    text-align: center;
+    color: #072a3c;
+}
+
+/* loading */
+.outer p {
+    bottom: 150px;
+    left: 600px ;
+    font-size: 40px;
+}
+
+
+
+
+}
