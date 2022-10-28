@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 
-/* 미디어쿼리 1700px */
-@media screen and (max-width:1720px) {
+/* 미디어쿼리 1920px */
+@media screen and (max-width:1920px) {
     h1.on1 {
         top: 250px; left: 410px;
     }
