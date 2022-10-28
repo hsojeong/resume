@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+
+/* 미디어쿼리 1700px */
+@media screen and (max-width:1720px) {
+    h1.on1 {
+        top: 250px; left: 410px;
+    }
+
+    /* section1 */
+    #sect1 h3 {
+        top: 430px;
+        left: 250px;
+    }
+
+    /* section2 */
+    #sect2 div h2 {
+        top: 80px;
+    }
+    #sect2 > div > div {
+        transform: translateY(210px);
+    }
+    #sect2 .image {
+        padding-top: 125px;
+    }
+    #sect2 .image img {
+        width: 230px;
+    }
+    #sect2 .intro {
+        padding-top: 30px;
+    } 
+    #sect2 .intro h3 {
+        font-size: 30px;
+    }
+    #sect2 .intro .firstintro > div {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    
+    /* section3 */
+    #sect3 div h2{
+        top: 100px;
+    }
+    #sect3 .graphbox {
+        bottom: 150px;
+    }
+
+    /* section4 */
+    #sect4 div h2 {
+        font-size: 80px;
+        margin: 20px 20px 5px 0;
+    }
+    #sect4 .port1 {
+        width: 1150px;
+        height: 658.467px;
+    }
+    #sect4 .slidegroup .arrright {
+        transform: translate(950px , -50px);
+    }
+    
+    #sect4 .slidegroup .slide1 .postit img {
+        top: 20px; 
+    } 
+    #sect4 .slidegroup .slide .postit p:nth-child(3) {
+        padding-right: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    #sect4 .slidegroup .slide .postit a {
+        padding: 0 10px 5px 2px;
+        margin-right: 25px;
+        font-size: 19px;
+    } 
+    #sect4 .slidegroup .slide .postit p:nth-child(5) {
+        padding: 30px 20px 0 0 ;
+        font-size: 12px;
+    }
+    #sect4 .slidegroup .slide .postit p:nth-child(5) i {
+        font-size: 13px;
+    }
+    #sect4 .slidegroup .slide2 .postit img {
+        top: 10px; right: 190px;
+    } 
+    
+    
+    /* section5 */
+    #sect5 > div > div {
+        max-width: 2100px;
+    }
+    #sect5 div h2 {
+        top: 115px; right: -600px;
+    }
+    #sect5.on div h2 {
+        right: 380px; 
+    }
+    #sect5 .contactbox {
+        transform: translate(170px , 40px);
+    }
+    #sect5 form {
+        padding-top: 230px;
+    }
+    #sect5 form .btn button {
+        margin: 0 60px 0 3px;
+    }
+    
+    /* loading */
+    .outer p {
+        bottom: 200px;
+        left: 800px ;
+    }
+
+}

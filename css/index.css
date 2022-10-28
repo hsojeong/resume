@@ -526,7 +526,7 @@ section > div {
     animation: none;
 }
 #sect5.on .lpimg {
-    animation: rotate 3s 0.7s;
+    animation: rotate 4s 0.7s;
     animation-iteration-count: 1;
 }
 #sect5 form {
