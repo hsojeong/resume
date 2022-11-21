@@ -499,6 +499,59 @@ section > div {
 } 
 
 
+
+#sect4 .slidegroup .slide3 .rwdT { 
+    position:absolute; 
+    top: 190px; 
+    left: 200px;
+    overflow:hidden; 
+    width:280px
+}
+#sect4 .slidegroup .slide3 .rwdM { 
+    position:absolute; 
+    top: 230px; 
+    left: 450px;
+    overflow:hidden; 
+    width:200px 
+}
+
+#sect4 .slidegroup .slide3 .rwdT .overlay { 
+    width:250px; height:330px; position:absolute;
+    top:35px; left:15px;
+    background:url('../images/ma1.png') no-repeat;
+    background-size:cover;
+    background-position:top center;
+    transition:all 1s;
+}
+#sect4 .slidegroup .slide3 .rwdT:hover .overlay { 
+    background-position:bottom center; 
+}
+#sect4 .slidegroup .slide3 .rwdM .overlay { 
+    width:145px; height:267px; 
+    position:absolute;  
+    top:60px; left:30px;
+    background:url('../images/ma2.png') no-repeat;
+    background-size:cover;
+    background-position:top center;
+    transition:all 1s;
+}
+#sect4 .slidegroup .slide3 .rwdM:hover .overlay { 
+    background-position:bottom center; 
+}
+
+#sect4 .slidegroup .slide3 .postit {
+    position: absolute;
+    top: 210px; right: 200px;
+    text-align: center;
+}
+#sect4 .slidegroup .slide3 .postit img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 0; left: 0;
+} 
+
+
 /* section5 */
 #sect5 > div > div {
     max-width: 2000px;
